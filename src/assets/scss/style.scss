@@ -1,0 +1,51 @@
+@import "normalize.scss";
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 16px;
+  }
+
+  .search {
+    width: 100%;
+    background-color: white;
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+
+    &__input {
+      display: block;
+      height: 42px;
+      width: 100%;
+      max-width: 300px;
+      border: solid 1px grey;
+      margin: 0 auto;
+      padding-left: 1rem;
+      font-size: 16px;
+    }
+  }
+
+  .collage {
+    column-count: 1;
+    column-gap: 16px;
+    padding: 16px 0;
+
+    @media screen and (min-width: 576px) and (max-width: 1199px) {
+      column-count: 2;
+    }
+
+    @media screen and (min-width: 1200px) {
+      column-count: 3;
+    }
+
+    &__image-wrap {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    &__image {
+      object-fit: contain;
+      width: 100%;
+    }
+  }

@@ -1,3 +1,9 @@
+# environment
+Після клонування створити файл .env.development, вньому додати змінні:
+
+VUE_APP_BASE_API_URL=https://example.com/ - тут вказати урл апі
+VUE_APP_API_TOKEN=token - тут вказати токен
+
 # winstars
 
 ## Project setup
