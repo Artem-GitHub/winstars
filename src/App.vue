@@ -69,10 +69,7 @@ export default {
     },
     scrolling () {
       if (!this.pageScrolledDown() || this.loading) return
-
-      this.$nextTick(() => {
-        this.getImages()
-      })
+      this.getImages()
     },
     pageScrolledDown () {
       return Math.ceil(window.pageYOffset) >= Math.floor(document.documentElement.scrollHeight - window.innerHeight)
